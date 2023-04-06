@@ -1,0 +1,56 @@
+ion-item{
+  --background:transparent;
+  
+ // --background:url('https://news-cdn.softpedia.com/images/news2/YoWindow-for-iOS-a-User-Friendly-Animated-Weather-App-18.png')
+
+  
+}
+ion-content{
+ // --background:url('https://img.freepik.com/free-vector/blue-sky-with-shiny-clouds-background_1017-23279.jpg?w=360');
+ // --opacity:0.1;
+--background:url('https://img.freepik.com/free-vector/blue-sky-with-shiny-clouds-background_1017-23279.jpg?w=360');
+ //--background-repeat: no-repeat;
+}
+.content{
+ // background-image:url('https://img.freepik.com/free-vector/blue-sky-with-shiny-clouds-background_1017-23279.jpg?w=360');
+ height:100%;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.body{
+  padding-top: 0px;
+  scroll-behavior: smooth;
+  margin: 15px;
+ // background-image:url('https://img.freepik.com/free-vector/blue-sky-with-shiny-clouds-background_1017-23279.jpg?w=360');
+ height:100%;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 500px;
+}
+.icon{
+  height: 50px;
+}
+ion-card{
+  
+
+  // box-shadow:   12px 14px 14px solid black;
+   border-radius: 25px;
+   border:1.5px groove #d2d2e1;
+   padding: 15px 10px;
+  // --background:#efefef;
+   //backdrop-filter: blur(300px);
+   background: rgba(255, 255, 255, 0.1);
+   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+   backdrop-filter: blur(8px);
+   -webkit-backdrop-filter: blur(2px);
+   border-radius: 10px;
+   color: rgb(244, 240, 240);
+   font-size: 16px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.subcard{
+  background: rgba(255, 255, 255, 0);
+  color: rgb(248, 243, 243);
+
+}

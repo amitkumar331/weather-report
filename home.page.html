@@ -1,0 +1,58 @@
+
+<div class="content">
+<ion-content >
+  <div class="body">
+    <h1 style="text-align: center;font-weight: 700;">Weather Report
+      <ion-icon name="partly-sunny-outline" style="font-size: 40px; color: yellow; position: relative;">
+      </ion-icon>
+    </h1>
+    <ion-card *ngIf="weather" class="form-card">
+      <ion-card-header style="text-align: end;color: antiquewhite;"> {{todaydate | date:"EEE dd MMM"}}
+       <p style="text-align: start;font-weight: 700;">Today's Report</p>
+
+      </ion-card-header>
+
+        <ion-icon name="partly-sunny-outline" style="font-size: 50px; color: yellow; position: relative;">
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 50%; background-color: white;"></div>
+        </ion-icon>
+        <ion-icon name="sunny" class="icon"></ion-icon>
+        <ion-icon name="location" style="color: rgb(227, 234, 36); font-size: 17px;"></ion-icon>
+        <span style="font-size: xx-large; color:white;font-weight:bold" > {{ weather.name }}
+       
+       </span>
+    
+      <ion-card-content>
+       <span style="font-size: x-large;" >Temperature</span>:  <span style="font-size: x-large;">{{ weather.main.temp }}°C</span> <br>
+
+
+      </ion-card-content>
+      <ion-card class="subcard"> <span>Feels like:</span>{{weather.main.feels_like}} <br>
+      </ion-card>
+      <ion-card class="subcard">
+        <span>Humidity: </span>{{ weather.main.humidity }}% <br>
+      </ion-card>
+      <ion-card class="subcard">
+        <span>Wind Speed:</span> {{weather.wind.speed}}
+
+      </ion-card>
+      <ion-card class="subcard">
+        <span>Rain:</span> {{weather.main.rain}}
+
+      </ion-card>
+    </ion-card>
+  
+
+      <ion-item>
+        <ion-label position="floating">Enter city name</ion-label>
+        <ion-input [(ngModel)]="city"></ion-input>
+      </ion-item>
+      <ion-button (click)="getWeather()" style="display: flex;justify-content: center;margin-top: 18px;">Get Weather</ion-button>
+    
+    
+  
+</div>
+</ion-content>
+</div>
+
+
+
